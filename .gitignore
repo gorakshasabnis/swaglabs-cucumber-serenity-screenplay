@@ -1,0 +1,13 @@
+target
+test-output
+screenshots
+*.log
+*.log.*
+.settings
+.project
+.idea
+.vscode
+.factorypath
+build
+.gradle
+.git
