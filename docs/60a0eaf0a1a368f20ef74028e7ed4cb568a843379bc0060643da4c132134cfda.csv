@@ -1,4 +1,4 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Login","Standard customer logs in with valid credentials","SUCCESS","2022-01-03T10:17:40.816163+05:30[Asia/Kolkata]","0.0","4.39"
-"Login","Customer logs in with locked credentials","SUCCESS","2022-01-03T10:17:45.384087+05:30[Asia/Kolkata]","0.0","1.74"
-"Login","Customer attempts to login with invalid credentials","SUCCESS","2022-01-03T10:17:47.212238+05:30[Asia/Kolkata]","0.0","6.76"
+"Login","Standard customer logs in with valid credentials","SUCCESS","2022-01-03T16:44:23.500575+05:30[Asia/Kolkata]","0.0","3.69"
+"Login","Customer logs in with locked credentials","SUCCESS","2022-01-03T16:44:27.377645+05:30[Asia/Kolkata]","0.0","2.07"
+"Login","Customer attempts to login with invalid credentials","SUCCESS","2022-01-03T16:44:29.542753+05:30[Asia/Kolkata]","0.0","7.69"

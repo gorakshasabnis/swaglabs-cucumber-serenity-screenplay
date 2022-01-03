@@ -7,6 +7,8 @@ import io.cucumber.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.questions.Text;
 import screenplay.actions.navigation.NavigateTo;
+import screenplay.questions.TheLoginPage;
+import screenplay.questions.TheProductCatalog;
 import screenplay.tasks.LoginInSwagLabs;
 
 import java.util.List;
@@ -35,7 +37,7 @@ public class AuthenticationStepDefinitions {
     @Then("{actor} should be welcomed with a Swag Labs product catalog")
     public void swag_labs_product_catalog_page(Actor actor) {
         actor.should(
-                seeThat("landing page title", Text.of(".title").asAString(),is("PRODUCTS"))
+                seeThat("landing page title", TheProductCatalog.title(),is("PRODUCTS"))
         );
     }
 
@@ -49,7 +51,11 @@ public class AuthenticationStepDefinitions {
     @Then("{actor} should be presented with a message as {string}")
     public void error_Message_As(Actor actor, String errMsg) {
         actor.should(
-                seeThat("error message",Text.of("[data-test='error']").asAString(),containsString(errMsg))
+                seeThat("login field is highlighted",TheLoginPage.usernameFieldIsHighlighted()),
+                seeThat("password field is highlighted",TheLoginPage.passwordFieldIsHighlighted()),
+                seeThat("error icon next to username field is displayed",TheLoginPage.errorIconIsDisplayedNextToUsername()),
+                seeThat("error icon next to password field is displayed",TheLoginPage.errorIconIsDisplayedNextToPassword()),
+                seeThat("error message", TheLoginPage.errorMessage(),containsString(errMsg))
         );
     }
 
