@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="Login" skipped="0" tests="6" time="12.88" timestamp="2022-01-03 10:17:40"><testcase name="Standard customer logs in with valid credentials"/><testcase name="Customer logs in with locked credentials"/><testcase name="Customer attempts to login with invalid credentials"/></testsuite>
